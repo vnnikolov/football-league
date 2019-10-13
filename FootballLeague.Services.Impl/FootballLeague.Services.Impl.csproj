@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>library</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FootballLeague.Entities\FootballLeague.Entities.csproj" />
+    <ProjectReference Include="..\FootballLeague.Services\FootballLeague.Services.csproj" />
+  </ItemGroup>
+
+</Project>

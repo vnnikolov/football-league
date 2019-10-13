@@ -1,0 +1,55 @@
+﻿@model TeamListViewModel
+
+@{
+	ViewData["Title"] = "Teams";
+}
+<div class="container">
+	<div class="row">
+		<div class="col">
+			<a class="btn btn-outline-primary" role="button" asp-controller="Team" asp-action="Create">
+				Add team
+			</a>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col">
+			<table class="table table-sm table-bordered table-striped table-hover">
+				<thead class="thead-dark">
+					<tr>
+						<th scope="col">#</th>
+						<th scope="col">Name</th>
+						<th scope="col">Points</th>
+						<th scope="col"></th>
+					</tr>
+				</thead>
+				<tbody>
+					@for (int i = 0; i < Model.Teams.Length; i++)
+					{
+						<tr>
+							<td>
+								@(i + 1)
+							</td>
+							<td>
+								@Model.Teams[i].Name
+							</td>
+							<td>
+								@Model.Teams[i].Points
+							</td>
+							<td>
+								<form method="post" asp-action="delete" asp-controller="team" asp-route-id="@Model.Teams[i].Id">
+									<button type="submit" class="btn btn-outline-danger">
+										Delete
+									</button>
+									<a role="button" class="btn btn-outline-success" asp-controller="team" asp-action="team" asp-route-id="@Model.Teams[i].Id">
+										Edit
+									</a>
+								</form>
+							</td>
+						</tr>
+					}
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+

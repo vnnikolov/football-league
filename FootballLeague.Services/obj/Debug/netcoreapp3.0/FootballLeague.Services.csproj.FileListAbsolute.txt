@@ -1,0 +1,8 @@
+C:\Projects\FootballLeague\FootballLeague.Services\obj\Debug\netcoreapp3.0\FootballLeague.Services.AssemblyInfoInputs.cache
+C:\Projects\FootballLeague\FootballLeague.Services\obj\Debug\netcoreapp3.0\FootballLeague.Services.AssemblyInfo.cs
+C:\Projects\FootballLeague\FootballLeague.Services\bin\Debug\netcoreapp3.0\FootballLeague.Services.deps.json
+C:\Projects\FootballLeague\FootballLeague.Services\bin\Debug\netcoreapp3.0\FootballLeague.Services.dll
+C:\Projects\FootballLeague\FootballLeague.Services\bin\Debug\netcoreapp3.0\FootballLeague.Services.pdb
+C:\Projects\FootballLeague\FootballLeague.Services\obj\Debug\netcoreapp3.0\FootballLeague.Services.dll
+C:\Projects\FootballLeague\FootballLeague.Services\obj\Debug\netcoreapp3.0\FootballLeague.Services.pdb
+C:\Projects\FootballLeague\FootballLeague.Services\obj\Debug\netcoreapp3.0\FootballLeague.Services.csprojAssemblyReference.cache

@@ -1,0 +1,61 @@
+﻿@model MatchListViewModel
+
+@{
+	ViewData["Title"] = "Matches";
+}<div class="container">
+	<div class="row">
+		<div class="col">
+			<a class="btn btn-outline-primary" role="button" asp-controller="match" asp-action="create">
+				Add match
+			</a>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col">
+			<table class="table table-sm table-bordered table-striped table-hover">
+				<thead class="thead-dark">
+					<tr>
+						<th scope="col">#</th>
+						<th scope="col" class="text-sm-right">Home team</th>
+						<th scope="col" colspan="2" class="text-sm-center">Score</th>
+						<th scope="col" class="text-sm-left">Away team</th>
+						<th scope="col" class="text-sm-left"></th>
+					</tr>
+				</thead>
+				<tbody>
+					@for (int i = 0; i < Model.Matches.Length; i++)
+					{
+						<tr>
+							<td>
+								@(i + 1)
+							</td>
+							<td class="text-sm-right">
+								@Model.Matches[i].HomeTeamName
+							</td>
+							<td class="text-sm-right">
+								@Model.Matches[i].HomeTeamScore
+							</td>
+							<td class="text-sm-left">
+								@Model.Matches[i].AwayTeamScore
+							</td>
+							<td class="text-sm-left">
+								@Model.Matches[i].AwayTeamName
+							</td>
+							<td>
+								<form method="post" asp-action="delete" asp-controller="match" asp-route-id="@Model.Matches[i].Id">
+									<button type="submit" class="btn btn-outline-danger">
+										Delete
+									</button>
+									<a role="button" class="btn btn-outline-success" asp-controller="match" asp-action="match" asp-route-id="@Model.Matches[i].Id">
+										Edit
+									</a>
+								</form>
+							</td>
+						</tr>
+					}
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+

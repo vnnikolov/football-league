@@ -1,0 +1,5 @@
+﻿.JustCode
+.vs
+.vscode
+*.suo
+.deploy
