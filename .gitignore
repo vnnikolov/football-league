@@ -3,3 +3,6 @@
 .vscode
 *.suo
 .deploy
+[Bb]in/
+[Oo]bj/
+[Oo]ut/

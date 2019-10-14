@@ -193,7 +193,6 @@ namespace FootballLeague.Services.Impl
 				{
 					await UpdateTeamRankings(entity.WinnerId.Value, -3);
 				}
-
 			}
 			catch (ServiceException)
 			{
